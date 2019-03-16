@@ -13,7 +13,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.1.31",
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "tachyons": "^4.11.1"
