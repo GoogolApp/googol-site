@@ -10,7 +10,7 @@ const About = ({ id }) => {
       contentClasses="flex justify-between flex-wrap"
     >
       <div className="w-50">
-        <img className="w-80 pt5" src={rocket} />
+        <img className="w-80 pt5" atl="Rocket" src={rocket} />
       </div>
 
       <div className="w-50">
