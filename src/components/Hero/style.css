@@ -1,3 +1,9 @@
 .hero {
   margin-top: 5rem;
+  background-image: url(https://images.unsplash.com/photo-1428200698796-38743f953a43?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50rem;
+  display: flex;
 }
