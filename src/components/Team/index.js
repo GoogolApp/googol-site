@@ -8,9 +8,13 @@ import maia from '../../../static/team/googol-team-maia.png'
 import matheus from '../../../static/team/googol-team-matheus.png'
 import vinicius from '../../../static/team/googol-team-vinicius.png'
 
-const Team = () => {
+const Team = ({ id }) => {
   return (
-    <Block title="Meet our team" contentClasses="flex flex-wrap justify-center">
+    <Block
+      id={id}
+      title="Meet our team"
+      contentClasses="flex flex-wrap justify-center"
+    >
       <Person picture={daniyel} name="Daniyel Rocha" job="Frontend" />
       <Person picture={igor} name="Igor Castor" job="Frontend" />
       <Person picture={maia} name="Matheus Maia" job="Backend" />
@@ -19,7 +23,11 @@ const Team = () => {
         name="Matheus Procópio"
         job="Frontend & Designer"
       />
-      <Person picture={vinicius} name="Vinicius Agostini" job="Backend" />
+      <Person
+        picture={vinicius}
+        name="Vinicius Agostini"
+        job="Frontend & Backend"
+      />
     </Block>
   )
 }

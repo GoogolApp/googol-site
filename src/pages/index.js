@@ -15,10 +15,10 @@ export default () => (
   <div className="home flex flex-column white min-vh-100 bg-near-black">
     <Header />
     <Hero />
-    <About />
-    <Features />
-    <Team />
-    <Contact />
+    <About id="about" />
+    <Features id="features" />
+    <Team id="team" />
+    <Contact id="contact" />
     <Footer />
   </div>
 )

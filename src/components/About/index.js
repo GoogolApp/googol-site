@@ -1,9 +1,9 @@
 import React from 'react'
 import Block from '../Block/index'
 
-const About = () => {
+const About = ({ id }) => {
   return (
-    <Block title="About" contentClasses="tc">
+    <Block id={id} title="About" contentClasses="tc">
       <h3>About Content</h3>
     </Block>
   )

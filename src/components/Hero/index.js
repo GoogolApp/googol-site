@@ -1,7 +1,12 @@
 import React from 'react'
+import './style.css'
 
 const Hero = () => {
-  return <h1 className="tc bg-black">Hero</h1>
+  return (
+    <div className="hero flex items-center justify-center bg-black h5">
+      Hero
+    </div>
+  )
 }
 
 export default Hero
