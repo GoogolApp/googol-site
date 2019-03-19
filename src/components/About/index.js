@@ -9,11 +9,11 @@ const About = ({ id }) => {
       title="About"
       contentClasses="flex justify-between flex-wrap"
     >
-      <div className="w-50">
+      <div className="w-100-s w-50-ns">
         <img className="w-80 pt5" atl="Rocket" src={rocket} />
       </div>
 
-      <div className="w-50">
+      <div className="w-100-s w-50-ns">
         <h1>Loren Ipsun</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ante

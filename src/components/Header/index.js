@@ -15,7 +15,7 @@ const Header = () => {
     <header className="flex justify-between items-center fixed w-100 top-0 bg-black white ph5">
       <ReadingProgress height={0.2} />
       <img src={brand} alt="Googol brand" />
-      <nav>
+      <nav className="dn db-l">
         <Link to="#about">About</Link>
         <Link to="#features">Features</Link>
         <Link to="#team">Team</Link>
