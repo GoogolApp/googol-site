@@ -5386,6 +5386,11 @@ latest-version@^3.0.0:
   dependencies:
     package-json "^4.0.0"
 
+lax.js@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/lax.js/-/lax.js-1.2.0.tgz#c26f62b24f26b40a33d955bcf8bff80626d74ff7"
+  integrity sha512-WnJA/yQpcW4COEbCkGVeCndtYux4c1pl/ZMvA4zK9SKoWwP1DF+ykfnpDVRlaty15qkDAXReiSOtjf+wtfvp5w==
+
 lcid@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"

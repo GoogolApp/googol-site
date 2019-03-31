@@ -1,6 +1,7 @@
 import React from 'react'
 import Block from '../Block/index'
 import rocket from '../../../static/about/rocket.png'
+import ParallaxBall from '../ParallaxBall'
 
 const About = ({ id }) => {
   return (
@@ -9,6 +10,7 @@ const About = ({ id }) => {
       title="About"
       contentClasses="flex justify-between flex-wrap"
     >
+      <ParallaxBall />
       <div className="w-100-s w-50-ns">
         <img className="w-80 pt5" atl="Rocket" src={rocket} />
       </div>

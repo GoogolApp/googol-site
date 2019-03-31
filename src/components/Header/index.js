@@ -3,6 +3,7 @@ import ReadingProgress from './ReadingProgress'
 
 import brand from '../../../static/header/brand.png'
 import './style.css'
+import { useLaxElement, useLax } from '../../hooks/useLax'
 
 const Link = ({ to, children }) => (
   <a className="link dim white no-underline grow pa2 mr2 b" href={to}>
@@ -11,8 +12,14 @@ const Link = ({ to, children }) => (
 )
 
 const Header = () => {
+  useLax()
+  const ref = useLaxElement()
   return (
-    <header className="flex justify-between items-center fixed w-100 top-0 bg-black white ph5">
+    <header
+      ref={ref}
+      data-lax-preset="eager"
+      className="flex justify-between items-center fixed w-100 top-0 bg-black white ph5 z-max"
+    >
       <ReadingProgress height={0.2} />
       <img src={brand} alt="Googol brand" />
       <nav className="dn db-l">
