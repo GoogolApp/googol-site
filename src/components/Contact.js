@@ -1,5 +1,6 @@
 import React from 'react'
-import Block from '../Block/index'
+
+import Block from './Block'
 
 const Contact = ({ id }) => {
   return (

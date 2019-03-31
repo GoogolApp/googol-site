@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useLaxElement } from '../../hooks/useLax'
+
+import { useLaxElement } from '../hooks/useLax'
 
 const Person = ({ picture, name, job }) => {
   const ref = useLaxElement()

@@ -1,7 +1,8 @@
 import React from 'react'
-import Block from '../Block/index'
-import rocket from '../../../static/about/rocket.png'
-import ParallaxBall from '../ParallaxBall'
+
+import Block from './Block'
+import rocket from '../../static/about/rocket.png'
+import ParallaxBall from './ParallaxBall'
 
 const About = ({ id }) => {
   return (

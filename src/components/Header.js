@@ -1,9 +1,8 @@
 import React from 'react'
-import ReadingProgress from './ReadingProgress'
 
-import brand from '../../../static/header/brand.png'
-import './style.css'
-import { useLaxElement, useLax } from '../../hooks/useLax'
+import ReadingProgress from './ReadingProgress'
+import brand from '../../static/header/brand.png'
+import { useLaxElement, useLax } from '../hooks/useLax'
 
 const Link = ({ to, children }) => (
   <a className="link dim white no-underline grow pa2 mr2 b" href={to}>
@@ -18,10 +17,11 @@ const Header = () => {
     <header
       ref={ref}
       data-lax-preset="eager"
+      style={{ height: '5rem' }}
       className="flex justify-between items-center fixed w-100 top-0 bg-black white ph5 z-max"
     >
       <ReadingProgress height={0.2} />
-      <img src={brand} alt="Googol brand" />
+      <img width="200" src={brand} alt="Googol brand" />
       <nav className="dn db-l">
         <Link to="#about">About</Link>
         <Link to="#features">Features</Link>
