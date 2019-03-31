@@ -9,7 +9,7 @@ const Person = ({ picture, name, job }) => {
     <div className="pa4 tc">
       <img
         ref={ref}
-        data-lax-preset="lazy"
+        data-lax-preset="eager"
         className="br-100"
         width={200}
         src={picture}
