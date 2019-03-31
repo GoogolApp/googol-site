@@ -1,12 +1,13 @@
 import React from 'react'
-import Block from '../Block/index'
+
+import Block from './Block'
 import Person from './Person'
 
-import daniyel from '../../../static/team/googol-team-daniyel.png'
-import igor from '../../../static/team/googol-team-igor.png'
-import maia from '../../../static/team/googol-team-maia.png'
-import matheus from '../../../static/team/googol-team-matheus.png'
-import vinicius from '../../../static/team/googol-team-vinicius.png'
+import daniyel from '../../static/team/googol-team-daniyel.png'
+import igor from '../../static/team/googol-team-igor.png'
+import maia from '../../static/team/googol-team-maia.png'
+import matheus from '../../static/team/googol-team-matheus.png'
+import vinicius from '../../static/team/googol-team-vinicius.png'
 
 const Team = ({ id }) => {
   return (

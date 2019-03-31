@@ -1,6 +1,7 @@
 import React from 'react'
-import Block from '../Block/index'
-import phone from '../../../static/features/phone.png'
+
+import Block from './Block'
+import phone from '../../static/features/phone.png'
 
 const Features = ({ id }) => {
   const featureRowClasses = 'flex flex-column justify-around'

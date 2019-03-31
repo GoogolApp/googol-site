@@ -10,7 +10,6 @@ import Footer from '../components/Footer'
 
 import 'tachyons/css/tachyons.min.css'
 import './style.css'
-import ParallaxBall from '../components/ParallaxBall'
 
 export default () => {
   return (

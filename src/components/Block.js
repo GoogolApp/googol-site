@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import Title from './Title'
 
 const Block = ({ id, title, className, children, contentClasses }) => {
   const classes = classNames(className, 'flex flex-column pa5 pb7')
   return (
     <section id={id} className={classes}>
-      <h1 className="tc pb3">{title}</h1>
+      <Title>{title}</Title>
       <div className={contentClasses}>{children}</div>
     </section>
   )

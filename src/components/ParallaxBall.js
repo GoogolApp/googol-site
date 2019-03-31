@@ -1,7 +1,7 @@
 import React from 'react'
-import { useLaxElement } from '../../hooks/useLax'
-import ball from '../../../static/ball.png'
-import { relative } from 'path'
+
+import { useLaxElement } from '../hooks/useLax'
+import ball from '../../static/ball.png'
 
 const ParallaxBall = ({ size = 500 }) => {
   const ref = useLaxElement()
