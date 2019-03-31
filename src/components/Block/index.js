@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const Block = ({ id, title, className, children, contentClasses }) => {
-  const classes = classNames(className, 'flex flex-column pa5')
+  const classes = classNames(className, 'flex flex-column pa5 pb7')
   return (
     <section id={id} className={classes}>
       <h1 className="tc pb3">{title}</h1>

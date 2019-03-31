@@ -10,15 +10,18 @@ import Footer from '../components/Footer'
 
 import 'tachyons/css/tachyons.min.css'
 import './style.css'
+import ParallaxBall from '../components/ParallaxBall'
 
-export default () => (
-  <div className="home flex flex-column white min-vh-100 bg-near-black">
-    <Header />
-    <Hero />
-    <About id="about" />
-    <Features id="features" />
-    <Team id="team" />
-    <Contact id="contact" />
-    <Footer />
-  </div>
-)
+export default () => {
+  return (
+    <div className="home flex flex-column white min-vh-100 bg-near-black">
+      <Header />
+      <Hero />
+      <About id="about" />
+      <Features id="features" />
+      <Team id="team" />
+      <Contact id="contact" />
+      <Footer />
+    </div>
+  )
+}
