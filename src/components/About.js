@@ -1,8 +1,11 @@
 import React from 'react'
 
 import Block from './Block'
+import ParallaxImage from './ParallaxImage'
+
+/** Images */
 import rocket from '../../static/about/rocket.png'
-import ParallaxBall from './ParallaxBall'
+import ball from '../../static/ball.png'
 
 const About = ({ id }) => {
   return (
@@ -11,9 +14,24 @@ const About = ({ id }) => {
       title="About"
       contentClasses="flex justify-between flex-wrap"
     >
-      <ParallaxBall />
+      <ParallaxImage
+        preset="linger"
+        src={ball}
+        style={{
+          opacity: 0.1,
+          position: 'absolute',
+          left: '30%',
+          right: 'auto',
+        }}
+        alt="Googol ball"
+      />
       <div className="w-100-s w-50-ns">
-        <img className="w-80 pt5" atl="Rocket" src={rocket} />
+        <ParallaxImage
+          preset="driftRight"
+          className="w-80 pt5"
+          atl="Rocket"
+          src={rocket}
+        />
       </div>
 
       <div className="w-100-s w-50-ns">

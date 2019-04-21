@@ -2,6 +2,8 @@ import React from 'react'
 
 import Block from './Block'
 import phone from '../../static/features/phone.png'
+import ParallaxImage from './ParallaxImage'
+import Title from './Title'
 
 const Features = ({ id }) => {
   const featureRowClasses = 'flex flex-column justify-around'
@@ -12,17 +14,22 @@ const Features = ({ id }) => {
       contentClasses="flex justify-around flex-wrap"
     >
       <div className={featureRowClasses}>
-        <h1>❤️ Feature 1</h1>
-        <h1>⚽️ Feature 2</h1>
-        <h1>📱 Feature 3</h1>
+        <Title preset="driftLeft fadeIn">❤️ Feature 1</Title>
+        <Title preset="driftLeft fadeIn">⚽️ Feature 2</Title>
+        <Title preset="driftLeft fadeIn">📱 Feature 3</Title>
       </div>
       <div className="w-30 tc">
-        <img className="w-80" src={phone} alt="Phone with logo" />
+        <ParallaxImage
+          preset="zoomInOut fadeIn"
+          className="w-100"
+          src={phone}
+          alt="Phone with logo"
+        />
       </div>
       <div className={featureRowClasses}>
-        <h1>⌚️ Feature 4</h1>
-        <h1>🍻 Feature 5</h1>
-        <h1>💣 Feature 6</h1>
+        <Title preset="driftRight fadeIn">⌚️ Feature 4</Title>
+        <Title preset="driftRight fadeIn">🍻 Feature 5</Title>
+        <Title preset="driftRight fadeIn">💣 Feature 6</Title>
       </div>
     </Block>
   )

@@ -1,22 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { useLaxElement } from '../hooks/useLax'
+import ParallaxImage from './ParallaxImage'
 
 const Person = ({ picture, name, job }) => {
-  const ref = useLaxElement()
   return (
     <div className="pa4 tc">
-      <img
-        ref={ref}
-        data-lax-preset="eager"
+      <ParallaxImage
+        size={180}
         className="br-100"
-        width={200}
+        preset="fadeIn"
         src={picture}
         alt={name}
       />
-      <h4>{name}</h4>
-      <h5>{job}</h5>
+      <h4 className="f4 lh-copy">{name}</h4>
+      <h5 className="f5 lh-copy">{job}</h5>
     </div>
   )
 }
